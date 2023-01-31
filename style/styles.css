@@ -30,7 +30,6 @@ body, button {
 }
 
 .search {
-  
     align-self: center;
     display: flex;
     column-gap: 0.7rem;
@@ -46,16 +45,10 @@ body, button {
 }
 
 .nav__search_bar {
-    border: 1px dotted blue;
     display: grid;
     grid-template-columns: 2.3fr 1fr;
     justify-content: center;
     gap: 8rem;
-    padding: 0.9rem  2.7rem;
-}
-
-.nav__search_bar > * {
-    border: 1px dotted white;
 }
 
 .sub_icon {
@@ -70,7 +63,7 @@ body, button {
 }
 
 .profile_name {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: bolder;
 }
 
@@ -85,4 +78,55 @@ body, button {
 .btn {
     background-color: transparent;
     border: none;
+}
+
+.profile__large {
+    height: 4.1rem;
+}
+
+.nav__link_bar {
+    display: grid;
+    grid-template-columns: 2fr 1.3fr;
+    margin-top: 1.1rem;
+    align-items: center;
+}
+
+.link_bar__btn {
+    border: 1px solid blue;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn_action {
+    padding: 0.7rem 1.5rem;
+    min-width: 6rem;
+    border-radius: 1.1rem;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.profile_side {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.user_name {
+    display: flex;
+    flex-direction: column;
+    font-weight: bolder;
+    gap: 0.2rem;
+}
+
+.message_txt {
+    font-size: 0.9rem;
+}
+
+.user_name__profile {
+    font-size: 1.3rem;
+}
+
+.nav_bar {
+    padding: 0.9rem 2.6rem;
 }
