@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.main_box {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.box__one, .content_body {
+    background-color: blue;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.box__two, .sidebar{
+    background-color: green;
+    grid-row: 1/3;
+}
+
+.box__three, .nav_bar {
+    background-color: red;
+}
