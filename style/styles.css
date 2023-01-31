@@ -1,13 +1,17 @@
-body {
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+body, button {
     margin: 0;
     padding: 0;
 }
+
 .main_box {
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1.1fr 4fr;
     grid-template-rows: 1fr 4fr;
+    font-family: Roboto;
 }
 
 .box__one, .content_body {
@@ -23,4 +27,62 @@ body {
 
 .box__three, .nav_bar {
     background-color: red;
+}
+
+.search {
+  
+    align-self: center;
+    display: flex;
+    column-gap: 0.7rem;
+}
+
+.input_search {
+    flex: 1 1 90%;
+    border-radius: 15px;
+    padding: 0.5rem 0;
+    border: none;
+    background-color: #efefef;
+    
+}
+
+.nav__search_bar {
+    border: 1px dotted blue;
+    display: grid;
+    grid-template-columns: 2.3fr 1fr;
+    justify-content: center;
+    gap: 8rem;
+    padding: 0.9rem  2.7rem;
+}
+
+.nav__search_bar > * {
+    border: 1px dotted white;
+}
+
+.sub_icon {
+    display: flex;
+    align-items: center;
+    gap: 1.7rem;
+   
+}
+
+.profile :first-child {
+    height: 2.8rem;
+}
+
+.profile_name {
+    font-size: 1.1rem;
+    font-weight: bolder;
+}
+
+.bell {
+    width: 1.5rem;
+}
+
+.search_btn {
+    width: 1.5rem;
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
 }
