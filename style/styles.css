@@ -131,6 +131,7 @@ body, button, p {
     grid-row: 2 / 3;
     display: grid;
     grid-template-columns: 3fr 1.4fr;
+    padding: 1rem;
 }
 
 .project_box {
@@ -143,10 +144,20 @@ body, button, p {
     flex: 1 1 98%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 1rem;
 }
 
 .project > * {
     display: grid;
     grid-template-rows: 3fr 1fr;
+    background-color: green;
+}
+
+.svg_links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border: 1px solid white;
+    gap: 1.5rem;
 }
