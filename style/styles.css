@@ -11,6 +11,7 @@ body, button, p {
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 4fr;
     font-family: Roboto;
+    font-weight: bold;
 }
 
 .box__two, .sidebar{
@@ -149,11 +150,22 @@ body, button, p {
     display: grid;
     grid-template-rows: 3fr 0.9fr;
     gap: 0.5rem;
-    padding: 2rem 2rem;
+    padding: 2rem 1.3rem;
     padding-bottom: 1.5rem;
+    padding-right: 1.1rem;
     background-color: green;
     border-radius: 8px;
     border-left: 8px solid #f0df53;
+}
+
+.project_title--txt {
+    font-size: 1.1rem;
+    padding-bottom: 0.3rem;
+}
+
+.description {
+    font-size: 0.98rem;
+    font-weight: normal;
 }
 
 .svg_links {
