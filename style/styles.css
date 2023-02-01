@@ -84,17 +84,19 @@ body, button, p {
 }
 
 .link_bar__btn {
-    border: 1px solid blue;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    padding-right: 1rem;
 }
 
 .btn_action {
-    min-width: 6rem;
+    min-width: 5.5rem;
     border-radius: 1.1rem;
     border: none;
     font-size: 0.9rem;
     font-weight: bold;
+    padding: 0.7rem 0.3rem;
 }
 
 .profile_side {
@@ -151,7 +153,7 @@ body, button, p {
     grid-template-rows: 3fr 0.9fr;
     gap: 0.5rem;
     padding: 2rem 1.3rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 1.2rem;
     padding-right: 1.1rem;
     background-color: green;
     border-radius: 8px;
@@ -173,6 +175,7 @@ body, button, p {
     align-items: center;
     justify-content: flex-end;
     gap: 1.5rem;
+    padding-right: 1rem;
 }
 
 .side_box {
