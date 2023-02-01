@@ -9,18 +9,18 @@ body, button, p {
     max-width: 100vw;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 0.5fr 4fr;
     font-family: Roboto;
     font-weight: bold;
 }
 
 .box__two, .sidebar{
-    background-color: green;
+    background-color: #1992d4;
     grid-row: 1/3;
 }
 
 .box__three, .nav_bar {
-    background-color: red;
+    /* background-color: ; */
 }
 
 .search {
@@ -92,11 +92,13 @@ body, button, p {
 
 .btn_action {
     min-width: 5.5rem;
-    border-radius: 1.1rem;
+    padding: 0.7rem 0.3rem;
+    border-radius: 1.2rem;
     border: none;
     font-size: 0.9rem;
     font-weight: bold;
-    padding: 0.7rem 0.3rem;
+    background-color: #1992d4;
+    color: #ffffff;
 }
 
 .profile_side {
@@ -121,16 +123,16 @@ body, button, p {
 }
 
 .nav_bar {
-    padding: 0.6rem 2.6rem;
+    padding: 1rem 2.6rem;
 }
 
 .box__one, .content_body {
-    background-color: blue;
+    background-color: #e2e8f0;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     display: grid;
     grid-template-columns: 3fr 1.2fr;
-    padding: 1rem;
+    padding: 2rem 1rem 2rem 1.3rem;
     gap: 1rem;
 }
 
@@ -155,9 +157,9 @@ body, button, p {
     padding: 2rem 1.3rem;
     padding-bottom: 1.2rem;
     padding-right: 1.1rem;
-    background-color: green;
+    background-color: #ffffff;
     border-radius: 8px;
-    border-left: 8px solid #f0df53;
+    border-left: 8px solid #f0b429;
 }
 
 .project_title--txt {
