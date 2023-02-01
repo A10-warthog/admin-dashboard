@@ -13,13 +13,7 @@ body, button, p {
     font-family: Roboto;
 }
 
-.box__one, .content_body {
-    background-color: blue;
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-}
+
 
 .box__two, .sidebar{
     background-color: green;
@@ -130,3 +124,22 @@ body, button, p {
 .nav_bar {
     padding: 0.6rem 2.6rem;
 }
+
+.box__one, .content_body {
+    background-color: blue;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 3fr 1.4fr;
+}
+
+.project_box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.project {
+    flex: 1 1 98%;
+}
+
