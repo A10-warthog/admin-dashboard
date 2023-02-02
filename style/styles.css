@@ -159,8 +159,12 @@ body, button, p {
     border-left: 8px solid #f0b429;
 }
 
+.project_title, .tweet_title, .title_trend {
+    font-size: 1.2rem;
+}
+
 .project_title--txt {
-    font-size: 1.1rem;
+    font-size: 1.08rem;
     padding-bottom: 0.3rem;
 }
 
@@ -206,8 +210,8 @@ body, button, p {
 }
 
 .announce_box:nth-child(2) {
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
+    border-top: 1px solid #d2d2d2;
+    border-bottom: 1px solid #d2d2d2;
     padding: 1rem 0;
 }
 
@@ -217,6 +221,7 @@ body, button, p {
 
 .announce_title_p {
     font-size: 0.9rem;
+    padding-bottom: 0.2rem;
 }
 
 .people {
