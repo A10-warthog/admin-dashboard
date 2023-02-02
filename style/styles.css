@@ -14,7 +14,7 @@ body, button, p {
     font-weight: bold;
 }
 
-.box__two, .sidebar{
+.sidebar{
     background-color: #1992d4;
     grid-row: 1/3;
     display: flex;
@@ -42,12 +42,12 @@ body, button, p {
 }
 
 .sidebar_title {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     column-gap: 0.5rem;
 }
 
 .svg_icon {
-    width: 1.5rem;
+    width: 1.4rem;
     display: flex;
     align-items: center;
 }
@@ -60,7 +60,7 @@ body, button, p {
    fill: #ffffff;
 }
 
-.nav_bar {
+.header {
     padding: 1rem 2.6rem;
     padding-top: 0.6rem;
     position: relative;
@@ -103,8 +103,9 @@ body, button, p {
     font-weight: bolder;
 }
 
-.bell {
+.svg {
     width: 1.5rem;
+    fill: #404040;
 }
 
 .search_btn {
@@ -166,10 +167,10 @@ body, button, p {
     font-size: 1.3rem;
 }
 
-.box__one, .content_body {
-    background-color: #e2e8f0;
+.main_content {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    background-color: #e2e8f0;
     display: grid;
     grid-template-columns: 3fr 1.1fr;
     padding: 2rem 1rem 2rem 1.3rem;
