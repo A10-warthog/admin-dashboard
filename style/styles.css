@@ -34,6 +34,7 @@ body, button, p {
 .links {
     padding-left: 0.5rem;
 }
+
 .personal, .setting_support {
     display: flex;
     flex-direction: column;
@@ -62,6 +63,8 @@ body, button, p {
 .nav_bar {
     padding: 1rem 2.6rem;
     padding-top: 0.6rem;
+    position: relative;
+    box-shadow: 0px 4px 4px 0 #ccd1d8;
 }
 
 .search {
@@ -197,6 +200,7 @@ body, button, p {
     background-color: #ffffff;
     border-radius: 8px;
     border-left: 8px solid #f0b429;
+    box-shadow: 1px 4px 6px 0 #ccd1d8;
 }
 
 .project_title, .tweet_title, .title_trend {
@@ -211,6 +215,7 @@ body, button, p {
 .description {
     font-size: 0.95rem;
     font-weight: normal;
+    color: #636363;
 }
 
 .svg_links {
@@ -223,7 +228,7 @@ body, button, p {
 
 .side_box {
     display: grid;
-    grid-template-rows: 2fr 1.8fr;
+    grid-template-rows: 2fr 1.9fr;
     gap: 2rem;
 }
 
@@ -242,11 +247,13 @@ body, button, p {
     padding: 0.5rem 2rem;
     border-radius: 10px;
     background-color: #ffffff;
+    box-shadow: 1px 4px 6px #ccd1d8;
 }
 
 .announce_txt {
     font-weight: normal;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
+    color: #636363;
 }
 
 .announce_box:nth-child(2) {
@@ -270,19 +277,20 @@ body, button, p {
 }
 
 .user_profile {
-    display: flex;
-    flex-direction: column;
-    padding: 0.5rem 1rem;   
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    padding: 1rem 1.5rem; 
+    align-items: center;  
 }
 
 .users {
     flex: 1 1 100%;
     display: flex;
-    gap: 1rem;
+    gap: 0.9rem;
 }
 
 .user_img {
-    max-height: 3rem;
+    max-height: 2.8rem;
     align-self: center;
 }
 
@@ -298,10 +306,11 @@ body, button, p {
 }
 
 .user_title :first-child {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
 }
 
 .user_title :last-child {
     font-weight: normal;
-    font-size: 0.95rem;
+    font-size: 0.8rem;
+    color: #636363;
 }
