@@ -19,8 +19,9 @@ body, button, p {
     grid-row: 1/3;
 }
 
-.box__three, .nav_bar {
-    /* background-color: ; */
+.nav_bar {
+    padding: 1rem 2.6rem;
+    padding-top: 0.6rem;
 }
 
 .search {
@@ -122,16 +123,12 @@ body, button, p {
     font-size: 1.3rem;
 }
 
-.nav_bar {
-    padding: 1rem 2.6rem;
-}
-
 .box__one, .content_body {
     background-color: #e2e8f0;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     display: grid;
-    grid-template-columns: 3fr 1.2fr;
+    grid-template-columns: 3fr 1.1fr;
     padding: 2rem 1rem 2rem 1.3rem;
     gap: 1rem;
 }
@@ -168,7 +165,7 @@ body, button, p {
 }
 
 .description {
-    font-size: 0.98rem;
+    font-size: 0.95rem;
     font-weight: normal;
 }
 
@@ -182,18 +179,84 @@ body, button, p {
 
 .side_box {
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    gap: 1rem;
+    grid-template-rows: 2fr 1.8fr;
+    gap: 2rem;
 }
 
 .side_box > * {
-    background-color: cyan;
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-.tweet_txt {
+.tweet,.people {
+    padding: 0 0.5rem;
+}
+
+.tweet_txt, .user_profile {
     flex: 1 1 99%;
-    background-color: purple;
+    padding: 0.5rem 2rem;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.announce_txt {
+    font-weight: normal;
+    font-size: 0.8rem;
+}
+
+.announce_box:nth-child(2) {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 1rem 0;
+}
+
+.announce_box {
+    padding: 1rem 0;
+}
+
+.announce_title_p {
+    font-size: 0.9rem;
+}
+
+.people {
+    display: flex;
+    flex-direction: column;
+}
+
+.user_profile {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 1rem;   
+}
+
+.users {
+    flex: 1 1 100%;
+    display: flex;
+    gap: 1rem;
+}
+
+.user_img {
+    max-height: 3rem;
+    align-self: center;
+}
+
+.user_img > :first-child {
+    max-height: inherit;
+}
+
+.user_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.2rem;
+}
+
+.user_title :first-child {
+    font-size: 0.95rem;
+}
+
+.user_title :last-child {
+    font-weight: normal;
+    font-size: 0.95rem;
 }
