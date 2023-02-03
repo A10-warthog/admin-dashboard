@@ -1,3 +1,59 @@
+/*
+Tables of Content (class)
+
+main_box
+	header
+		nav__search_bar	
+			search
+				button
+					search_button
+				input_search
+			sub_icon
+				svg
+				profile
+				profile_name
+		nav__link_bar
+			profile_side
+				profile__large
+				user_name
+					message_txt
+					user_name__profile
+			link_bar__btn
+				btn_action
+	sidebar
+		sidebar_title
+			svg_icon
+		personal
+			links
+				svg_icon
+		setting_support
+			links
+				svg_icon
+	main_content
+		project_box
+			project_title
+			project
+				project > *
+					project_txt
+                        project_title--txt
+                        description
+					svg_links
+		side_box
+			announcement
+				announcement_title
+				announcement_txt
+					announce_box
+						announce_title
+							announce_title_p
+						announce_txt
+			people
+				title_trend
+				user_profile
+					users
+						user_img
+						user_title
+*/
+
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 
 body, button, p {
@@ -14,52 +70,18 @@ body, button, p {
     font-weight: bold;
 }
 
-.sidebar{
-    background-color: #1992d4;
-    grid-row: 1/3;
-    display: flex;
-    flex-direction: column;
-    padding-left: 1.5rem;
-    padding-top: 1rem;
-    row-gap: 3rem;
-}
 
-.links, .sidebar_title {
-    display: flex;
-    align-items: center;
-    column-gap: 1rem;
-    color: #ffffff;
-}
 
-.links {
-    padding-left: 0.5rem;
-}
 
-.personal, .setting_support {
-    display: flex;
-    flex-direction: column;
-    row-gap: 1rem;
-}
 
-.sidebar_title {
-    font-size: 1.6rem;
-    column-gap: 0.5rem;
-}
 
-.svg_icon {
-    width: 1.4rem;
-    display: flex;
-    align-items: center;
-}
 
-.svg_icon--large {
-    width: 2.5rem;
-}
 
-.svg_icon :first-child {
-   fill: #ffffff;
-}
 
+
+
+
+/*header*/
 .header {
     padding: 1rem 2.6rem;
     padding-top: 0.6rem;
@@ -67,10 +89,27 @@ body, button, p {
     box-shadow: 0px 4px 4px 0 #ccd1d8;
 }
 
+/*nav_search_bar*/
+.nav__search_bar {
+    display: grid;
+    grid-template-columns: 2.3fr 1fr;
+    justify-content: center;
+    gap: 8rem;
+}
+/*search*/
 .search {
     align-self: center;
     display: flex;
     column-gap: 0.7rem;
+}
+
+.button {
+    background-color: transparent;
+    border: none;
+}
+
+.search_button {
+    width: 1.5rem;
 }
 
 .input_search {
@@ -80,20 +119,19 @@ body, button, p {
     border: none;
     background-color: #efefef;
 }
-
-.nav__search_bar {
-    display: grid;
-    grid-template-columns: 2.3fr 1fr;
-    justify-content: center;
-    gap: 8rem;
-}
-
+/*sub_icon*/
 .sub_icon {
     display: flex;
     align-items: center;
     gap: 1.7rem;
 }
 
+.svg {
+    width: 1.5rem;
+    fill: #404040;
+}
+
+/*profile*/
 .profile :first-child {
     height: 2.8rem;
 }
@@ -103,24 +141,7 @@ body, button, p {
     font-weight: bolder;
 }
 
-.svg {
-    width: 1.5rem;
-    fill: #404040;
-}
-
-.search_btn {
-    width: 1.5rem;
-}
-
-.btn {
-    background-color: transparent;
-    border: none;
-}
-
-.profile__large {
-    height: 4.1rem;
-}
-
+/*nav__link_bar*/
 .nav__link_bar {
     display: grid;
     grid-template-columns: 2fr 1.3fr;
@@ -128,6 +149,32 @@ body, button, p {
     align-items: center;
 }
 
+.profile_side {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profile__large {
+    height: 4.1rem;
+}
+
+.user_name {
+    display: flex;
+    flex-direction: column;
+    font-weight: bolder;
+    gap: 0.2rem;
+}
+
+.message_txt {
+    font-size: 0.9rem;
+}
+
+.user_name__profile {
+    font-size: 1.3rem;
+}
+
+/*link_bar__btn*/
 .link_bar__btn {
     display: flex;
     justify-content: flex-end;
@@ -146,27 +193,58 @@ body, button, p {
     color: #ffffff;
 }
 
-.profile_side {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.user_name {
+/*sidebar*/
+.sidebar{
+    background-color: #1992d4;
+    grid-row: 1/3;
     display: flex;
     flex-direction: column;
-    font-weight: bolder;
-    gap: 0.2rem;
+    padding-left: 1.5rem;
+    padding-top: 1rem;
+    row-gap: 3rem;
 }
 
-.message_txt {
-    font-size: 0.9rem;
+/*sidebar_title*/
+.sidebar_title {
+    font-size: 1.6rem;
+    column-gap: 0.5rem;
 }
 
-.user_name__profile {
-    font-size: 1.3rem;
+.svg_icon {
+    width: 1.4rem;
+    display: flex;
+    align-items: center;
 }
 
+/*select every first child of div with svg_icon class*/
+.svg_icon :first-child {
+    fill: #ffffff;
+ }
+
+.svg_icon--large {
+    width: 2.5rem;
+}
+
+/*personal, setting_support*/
+.personal, .setting_support {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+/*links, sidebar_title*/
+.links, .sidebar_title {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    color: #ffffff;
+}
+
+.links {
+    padding-left: 0.5rem;
+}
+
+/*main_content*/
 .main_content {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
@@ -183,6 +261,11 @@ body, button, p {
     row-gap: 1rem;
 }
 
+/*project_title, announcement_title, title_trend*/
+.project_title, .announcement_title, .title_trend {
+    font-size: 1.2rem;
+}
+/*project*/
 .project {
     flex: 1 1 98%;
     display: grid;
@@ -191,6 +274,7 @@ body, button, p {
     gap: 1rem;
 }
 
+/*select all children of project*/
 .project > * {
     display: grid;
     grid-template-rows: 3fr 0.9fr;
@@ -202,10 +286,6 @@ body, button, p {
     border-radius: 8px;
     border-left: 8px solid #f0b429;
     box-shadow: 1px 4px 6px 0 #ccd1d8;
-}
-
-.project_title, .tweet_title, .title_trend {
-    font-size: 1.2rem;
 }
 
 .project_title--txt {
@@ -227,23 +307,27 @@ body, button, p {
     padding-right: 1rem;
 }
 
+/*side_box*/
 .side_box {
     display: grid;
     grid-template-rows: 2fr 1.9fr;
     gap: 2rem;
 }
 
+/*select every side box child*/
 .side_box > * {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-.tweet,.people {
+/*announcement, people*/
+.announcement,.people {
     padding: 0 0.5rem;
 }
 
-.tweet_txt, .user_profile {
+/*announcement_txt, user_profile*/
+.announcement_txt, .user_profile {
     flex: 1 1 99%;
     padding: 0.5rem 2rem;
     border-radius: 10px;
@@ -251,32 +335,40 @@ body, button, p {
     box-shadow: 1px 4px 6px #ccd1d8;
 }
 
-.announce_txt {
-    font-weight: normal;
-    font-size: 0.75rem;
-    color: #636363;
+
+
+/*announce_box*/
+.announce_box {
+    padding: 1rem 0;
 }
 
+/*select 2nd child of announce-box to apply top and bottom border*/
 .announce_box:nth-child(2) {
     border-top: 1px solid #d2d2d2;
     border-bottom: 1px solid #d2d2d2;
     padding: 1rem 0;
 }
 
-.announce_box {
-    padding: 1rem 0;
-}
-
+/*announce_title p tag child*/
 .announce_title_p {
     font-size: 0.9rem;
     padding-bottom: 0.2rem;
 }
 
+/*announce_txt*/
+.announce_txt {
+    font-weight: normal;
+    font-size: 0.75rem;
+    color: #636363;
+}
+
+/*people*/
 .people {
     display: flex;
     flex-direction: column;
 }
 
+/*user_profile*/
 .user_profile {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
@@ -290,15 +382,18 @@ body, button, p {
     gap: 0.9rem;
 }
 
+/*user_img is a div*/
 .user_img {
     max-height: 2.8rem;
     align-self: center;
 }
 
+/*select first child image*/
 .user_img > :first-child {
     max-height: inherit;
 }
 
+/*user_title is a div*/
 .user_title {
     display: flex;
     flex-direction: column;
@@ -306,10 +401,12 @@ body, button, p {
     gap: 0.2rem;
 }
 
+/*prefix @*/
 .user_title :first-child {
     font-size: 0.9rem;
 }
 
+/*role*/
 .user_title :last-child {
     font-weight: normal;
     font-size: 0.8rem;

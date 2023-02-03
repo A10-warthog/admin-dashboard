@@ -1,3 +1,8 @@
+<!--HTML entities used are
+     &#x28; = (
+     &#x40; = @
+     &#x29; = )
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,14 +10,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/styles.css">
-    <title>Document</title>
+    <title>Admin Dashboard</title>
 </head>
 <body>
+    <!--container where all three sub container resides header, sidebar and main_content-->
     <div class="main_box">
+        <!--header is divided into 2 div, nav__search_bar and nav__link_bar-->
         <div class="header">
+            <!--nav__search_bar has contains search bar and small profile
+                is is also divided into 2 div-->
             <div class="nav__search_bar">
+                <!--first child of header contains button and input field and is a div-->
                 <div class="search">
-                    <button type="submit" class="btn">
+                    <button type="submit" class="button">
+                        <!--svg icon for search-->
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="search_btn"><title>magnify</title><path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"/></svg>
                     </button>
                     <label for="search"></label>
@@ -36,6 +47,7 @@
                         <div class="user_name__profile">Morgan Oakley &#x28;&#x40;morgan&#x29;</div>
                     </div>
                 </div>
+                <!--buttons-->
                 <div class="link_bar__btn">
                     <button class="btn_action">New</button>
                     <button class="btn_action">Upload</button>
@@ -43,13 +55,16 @@
                 </div>
             </div>
         </div>
-        <div class="box__two sidebar">
+        <!--second child of main_box-->
+        <div class="sidebar">
             <div class="sidebar_title">
                 <div class="svg_icon svg_icon--large">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="svg_icon svg_icon--large"><title>view-dashboard</title><path d="M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z" /></svg>
                 </div>
+                <!--sidebar_title_name title_name class not in use-->
                 <div class="title_name">Dashboard</div>
             </div>
+            <!--users nav links to parts of page-->
             <div class="personal">
                 <div class="links">
                     <div class="svg_icon">
@@ -88,6 +103,7 @@
                     <div class="title_txt">Communities</div>
                 </div>
             </div>
+            <!--Third child of sidebar. Settings and Support-->
             <div class="setting_support">
                 <div class="links">
                     <div class="svg_icon">
@@ -109,7 +125,9 @@
                 </div>
             </div>
         </div>
+        <!--Third child of main_box which has projects and notification container. Class main_content has two container, one for project other for notifications and people-->
         <div class="main_content">
+            <!--first child-->
             <div class="project_box">
                 <div class="project_title">Your Projects</div>
                 <div class="project">
@@ -200,10 +218,11 @@
                     </div>
                 </div>        
             </div>
+             <!--Second child of main_content-->
             <div class="side_box">
-                <div class="tweet">
-                    <div class="tweet_title">Announcements</div>
-                    <div class="tweet_txt">
+                <div class="announcement">
+                    <div class="announcement_title">Announcements</div>
+                    <div class="announcement_txt">
                         <div class="announce_box">
                             <div class="announce_title">
                                 <p class="announce_title_p">Site Maintenance</p>
@@ -228,15 +247,20 @@
                         </div>
                     </div>
                 </div>
+                <!--Second child of side_box-->
                 <div class="people">
+                    <!--title of people class container-->
                     <div class="title_trend">Trending</div>
+                    <!--child with people profile and role in it-->
                     <div class="user_profile">
                        <div class="users">
                         <div class="user_img">
                             <img src="img/dog.png" alt="tegan">
                         </div>
                         <div class="user_title">
-                            <p>@tegan</p>
+                            <!--profile name with @ prefix-->
+                            <p>&#x40;tegan</p>
+                            <!--role of the user-->
                             <p>World Peace Builder</p>
                         </div>
                        </div>
@@ -245,7 +269,7 @@
                             <img src="img/cat-profile.png" alt="morgan">
                         </div>
                         <div class="user_title">
-                            <p>@morgan</p>
+                            <p>&#x40;morgan</p>
                             <p>Super Coll Project</p>
                         </div>
                        </div>
@@ -254,7 +278,7 @@
                             <img src="img/spider-man.png" alt="kendall">
                         </div>
                         <div class="user_title">
-                            <p>@kendall</p>
+                            <p>&#x40;kendall</p>
                             <p>Life Changing App</p>
                         </div>
                        </div>
@@ -263,7 +287,7 @@
                             <img src="img/penguin.png" alt="alex">
                         </div>
                         <div class="user_title">
-                            <p>@alex</p>
+                            <p>&#x40;alex</p>
                             <p>No Traffic Maker</p>
                         </div>
                        </div>
